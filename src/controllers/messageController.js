@@ -1,5 +1,6 @@
 import {messageSchema} from "../support/validat"
 import Message from "../models/message";
+import User from "../models/user"; 
 
 const sendMessage = async (req,res)=>{
     try{
@@ -20,15 +21,26 @@ const sendMessage = async (req,res)=>{
 res.status(500).json({error})
     }
 }
+
 const getAllMessages=async (req,res)=>{
-    console.log(req.body['role'])
+    User.findOne({
+        _id:req.user.id
+    }).then((user)=>{
+
+  
+    if(user.role.toString()=='admin'){
+
 
     Message.find()
     .then(messages=>{
         res.json({messages})
     })
     .catch(error=>res.json(error))
+
 }
+else{
+    res.json({message:'User Not Authorized'}).status(401)
+}})}
 const deleteMessage=(req,res)=>{
     const{id}=req.params
     Message.deleteOne({_id:id})
