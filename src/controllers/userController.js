@@ -27,7 +27,7 @@ const createNewUser = async (req, res) => {
                         username: user.username,
                         email: user.email,
                         role: user.role,
-                        token: generateToken(user._id)
+                        token: generateToken(user)
                     }
                 }
                 ))
