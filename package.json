@@ -4,17 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node ./src/index.js",
-    "test": "cross-env NODE_ENV=test PORT=8080 jest --coverage && coveralls < coverage/lcov.info",
-    "watch": "babel ./src --out-dir ./build",
-    "type":"module"
+    "start": "nodemon --exec babel-node ./src/app.js",
+    "test": "cross-env NODE_ENV=test PORT=8080 jest --coverage && coveralls < coverage/lcov.info"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/node": "^7.20.7",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
     "bcryptjs": "^2.4.3",
     "chai": "^4.3.7",
     "chai-http": "^4.3.0",
@@ -30,15 +29,23 @@
     "mongoose": "^6.8.0",
     "nodemon": "^2.0.20",
     "passport": "^0.6.0",
-    "passport-jwt": "^4.0.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "save-dev": "0.0.1-security",
     "sinon": "^15.0.1",
     "supertest": "^6.3.3",
-    "swagger-jsdoc": "^6.2.7",
     "swagger-ui-express": "^4.6.0"
   },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "4.2.3"
+    }
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
-    "@babel/preset-env": "^7.20.2",
-    "eslint-plugin-react": "^7.31.11"
+    "coveralls": "^3.1.1"
   }
 }

@@ -4,12 +4,12 @@ import mongoose from 'mongoose'
 mongoose.Promise = global.Promise
 import Message from "../models/message";
 import dotenv from 'dotenv';
-import app from '../index';
+import app from '../app';
 import chai from 'chai';
 import { expect } from 'chai';
 import chaiHttp from 'chai-http';
 dotenv.config();
-import User from '../models/user'
+import User from '../models/userModel'
 
 const testingMessage={
     name:"John Doe",
@@ -50,7 +50,7 @@ describe('Testing message routes',()=>{
         expect(res.status).to.be.equal(200);
     })
     it('should get all messages',async()=>{
-        const signUp=await chai.request(app).post('/api/user/signUp').send((tester));
+        const signUp=await chai.request(app).post('/api/account/signUp').send((tester));
         const token = `Bearer ${signUp.body.user.token}`;
         const res= await chai.request(app).get('/api/message/').set('Authorization', token)
         console.log(res.body)

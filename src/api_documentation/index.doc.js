@@ -8,6 +8,9 @@ dotenv.config();
 const local = process.env.LOCAL_HOST;
 const heroku = process.env.DB_CONNECT;
 
+
+
+
 const options = {
   openapi: '3.0.1',
   info: {
@@ -29,7 +32,7 @@ tags: [
       {name: 'Message', description: 'Messages'},
     ],
   paths: {
-    '/api/user/signUp': {
+    '/api/account/signUp': {
       post: {
         tags: ['Users'],
         description: 'User SigUp',
@@ -63,7 +66,7 @@ tags: [
         },
       },
     },
-    '/api/user/login': {
+    '/api/account/login': {
         post: {
         tags: ['Users'],
         description: 'User login',
@@ -96,7 +99,7 @@ tags: [
         }, 
         } 
     },
-    '/api/post/': {
+    '/api/articles/': {
         get: {
         tags: ['Blog'],
         description: 'Get All Blog Articles',
@@ -112,7 +115,7 @@ tags: [
         }, 
       } 
     },
-    '/api/post/{id}': {
+    '/api/articles/{id}': {
       get: {
         security: [],
       tags: ['Blog'],
@@ -134,10 +137,34 @@ tags: [
       }, 
       } 
   },
-  '/api/post/add':{
+  '/api/articles/add':{
     post:{
       tags:['Blog'],
       description:'Create new blog article',
+    //   parameters:[
+    //   {
+    //   "in":"formData",
+    //   "name":"title",
+    //   "description":"Article title",
+    //   required:true
+    //    },
+    //   {
+    //   "in":"formData",
+    //   "name":"content",
+    //   "description":"Article content",
+    //   required:true
+    //    },
+    //   {
+    //   "in":"form",
+    //   "name":"photo",
+    //   scheme:{
+    //   type: 'string',
+    //   description: "Article image url",
+    //   format: 'binary'
+    // },
+    //   required:true
+    //    },
+    //   ],
       requestBody: {
         content: {
           'multipart/form-data': {
@@ -161,7 +188,7 @@ tags: [
       }, 
     }
   },
-  '/api/post/{id}/update':{
+  '/api/articles/{id}/update':{
     put:{
       tags:['Blog'],
       description:'Update blog article',
@@ -202,7 +229,7 @@ tags: [
       }, 
     }
   },
-  '/api/post/{id}':{
+  '/api/articles/{id}':{
     delete:{
       tags:['Blog'],
       description:'Delete blog article',
@@ -239,7 +266,7 @@ tags: [
       }, 
     }
   },
-  '/api/post/{article_id}/comment':{
+  '/api/articles/{article_id}/comment':{
     post:{
       tags:['Blog'],
       description:'Comment on article blog article',
@@ -279,7 +306,7 @@ tags: [
       }, 
     }
   },
-  '/api/post/{article_id}/like':{
+  '/api/articles/{article_id}/like':{
     post:{
       tags:['Blog'],
       description:'Like on article blog article',

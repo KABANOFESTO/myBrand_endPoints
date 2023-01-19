@@ -1,22 +1,22 @@
 import mongoose from "mongoose";
 
 const schema = mongoose.Schema({
-    name:{
-        type: String,
-        required:[true,'Please add a name'],
-    },
-    email:{
-        type: String,
-        required:[true,'Please add a email'],
-        unique:true
-    },
-    message:{
-        type: String,
-        required:[true,'Please add a message'],
-    },
-},
-{
+ 
+	name: {
+		type:String,
+		required:[true,'Please add a title'],
+	},
+	email: {
+		type:String,
+		required:[true,'Please add a content'],
+	},
+	message: {
+		type:String,
+		required:[true,'Please add a content'],
+	},
+},{
 	timeStamps:true
-})
+}
+)
 
-module.exports=mongoose.model('message',schema)
+module.exports = mongoose.model("message", schema)

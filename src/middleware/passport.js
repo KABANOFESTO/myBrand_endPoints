@@ -3,7 +3,7 @@ import passportJwt from 'passport-jwt'
 const JWTstrategy = passportJwt.Strategy;
 const ExtractJWT = passportJwt.ExtractJwt;
 import passport from 'passport';
-import User from '../models/user'
+import User from '../models/userModel'
 var opts = {}
 opts.jwtFromRequest = ExtractJWT.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = 'my-token-secret';

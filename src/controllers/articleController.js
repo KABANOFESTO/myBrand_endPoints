@@ -1,8 +1,9 @@
-import Article from "../models/Post"
+
+import Article from "../models/article"
 // const express = require('express')
-import { articleSchema,updateArticleSchema } from "../support/validat";
-import User from "../models/user"
-import articleImage from '../support/photoupload'
+import { articleSchema,updateArticleSchema } from "../support/validation";
+import User from "../models/userModel"
+import imageUpload from '../support/photoupload'
 
 
 var today = new Date();
@@ -21,13 +22,12 @@ exports.getAllArticles = (req, res) => {
 };
 
 exports.createNewArticle = async (req, res)  =>{
-    // console.log(req.s)
     try {
         const valationResult = await articleSchema.validateAsync(req.body);
         User.findOne({
             _id:req.user.id
         }).then(async (result)=>{
-        console.log("get")
+      
      
         if(result.role.toString()=='admin')
         {
@@ -38,7 +38,7 @@ exports.createNewArticle = async (req, res)  =>{
                 imageUrl: '',
             })
             if(req.files) {
-            const image = await articleImage(req);
+            const image = await imageUpload(req);
             article.imageUrl = image.url
             }
         article.save()
@@ -52,7 +52,7 @@ exports.createNewArticle = async (req, res)  =>{
             res.json({message:'User Not Authorized'}).status(401)
         }
     }).catch((er)=>{
-        res.status(500).json(er+"hrrr")
+        res.status(500).json()
     })
     }
     catch (err) {
@@ -198,3 +198,4 @@ exports.getOneArticle=(req,res)=>{
         res.status(500).json({error:error.message})
     })
 }
+

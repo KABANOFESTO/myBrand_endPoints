@@ -1,7 +1,6 @@
-import {Router} from 'express'
+import express from 'express'
 import {createNewUser,LoginUser,getUserInfo} from '../controllers/userController'
-const router = Router()
+const router = express.Router()
 router.post('/login',LoginUser)
 router.post('/signUp',createNewUser)
-
-export default router
+module.exports=router

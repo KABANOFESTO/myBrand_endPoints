@@ -1,15 +1,10 @@
+import express from "express"
+const router = express.Router()
+import article from './articleRouter'
+import user from './userRouter'
+import message from './messageRouter'
+router.use('/articles',article)
+router.use('/account',user)
+router.use('/message',message)
 
-import {Router} from "express";
-import userRouter from "./userRouter"
-import blogRouter from "./blogRouter"
-import messageRouter from "./messageRouter"
-import docrouter from "../swagger/index.doc";
-
-const router = Router()
-router.use('/user',userRouter);
-router.use('/post',blogRouter);
-router.use('/message',messageRouter);
-
-router.use('/docs',docrouter)
-
-export default router;
+module.exports=router

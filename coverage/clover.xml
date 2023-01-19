@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1673810532354" clover="3.2.0">
-  <project timestamp="1673810532354" name="All files">
-    <metrics statements="213" coveredstatements="149" conditionals="36" coveredconditionals="17" methods="56" coveredmethods="25" elements="305" coveredelements="191" complexity="0" loc="213" ncloc="213" packages="8" files="17" classes="17"/>
+<coverage generated="1674124420989" clover="3.2.0">
+  <project timestamp="1674124420990" name="All files">
+    <metrics statements="212" coveredstatements="176" conditionals="40" coveredconditionals="23" methods="54" coveredmethods="34" elements="306" coveredelements="233" complexity="0" loc="212" ncloc="212" packages="8" files="17" classes="17"/>
     <package name="src">
-      <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="0"/>
-      <file name="index.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\index.js">
-        <metrics statements="12" coveredstatements="11" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
+      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\app.js">
+        <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="5" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="12" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="3" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.api_documentation">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="index.doc.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\api_documentation\index.doc.js">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="478" count="3" type="stmt"/>
+        <line num="480" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.config">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="cloudinary.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\config\cloudinary.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
@@ -29,36 +44,36 @@
         <line num="10" count="3" type="stmt"/>
       </file>
       <file name="db.config.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\config\db.config.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="3" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="132" coveredstatements="76" conditionals="28" coveredconditionals="12" methods="49" coveredmethods="21"/>
+      <metrics statements="129" coveredstatements="98" conditionals="26" coveredconditionals="16" methods="48" coveredmethods="29"/>
       <file name="articleController.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\controllers\articleController.js">
-        <metrics statements="87" coveredstatements="41" conditionals="20" coveredconditionals="6" methods="35" coveredmethods="12"/>
-        <line num="8" count="3" type="stmt"/>
+        <metrics statements="86" coveredstatements="65" conditionals="20" coveredconditionals="11" methods="35" coveredmethods="21"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="32" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="40" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="40" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
         <line num="55" count="0" type="stmt"/>
@@ -92,63 +107,61 @@
         <line num="122" count="0" type="stmt"/>
         <line num="125" count="0" type="stmt"/>
         <line num="131" count="3" type="stmt"/>
-        <line num="132" count="0" type="stmt"/>
-        <line num="133" count="0" type="stmt"/>
-        <line num="135" count="0" type="stmt"/>
-        <line num="138" count="0" type="stmt"/>
-        <line num="144" count="0" type="stmt"/>
-        <line num="146" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="148" count="0" type="stmt"/>
-        <line num="149" count="0" type="stmt"/>
-        <line num="150" count="0" type="stmt"/>
+        <line num="132" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="138" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="146" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="148" count="1" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+        <line num="150" count="1" type="stmt"/>
         <line num="151" count="0" type="stmt"/>
         <line num="153" count="0" type="stmt"/>
         <line num="155" count="0" type="stmt"/>
         <line num="159" count="3" type="stmt"/>
-        <line num="160" count="0" type="stmt"/>
-        <line num="161" count="0" type="stmt"/>
-        <line num="163" count="0" type="stmt"/>
-        <line num="166" count="0" type="stmt"/>
-        <line num="168" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="170" count="0" type="stmt"/>
-        <line num="171" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="160" count="1" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="163" count="1" type="stmt"/>
+        <line num="166" count="1" type="stmt"/>
+        <line num="168" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="170" count="1" type="stmt"/>
+        <line num="171" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="172" count="0" type="stmt"/>
-        <line num="176" count="0" type="stmt"/>
-        <line num="178" count="0" type="stmt"/>
-        <line num="179" count="0" type="stmt"/>
+        <line num="176" count="1" type="stmt"/>
+        <line num="178" count="1" type="stmt"/>
+        <line num="179" count="1" type="stmt"/>
         <line num="180" count="0" type="stmt"/>
         <line num="182" count="0" type="stmt"/>
         <line num="184" count="0" type="stmt"/>
         <line num="188" count="3" type="stmt"/>
-        <line num="189" count="0" type="stmt"/>
-        <line num="190" count="0" type="stmt"/>
-        <line num="192" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="193" count="0" type="stmt"/>
+        <line num="189" count="1" type="stmt"/>
+        <line num="190" count="1" type="stmt"/>
+        <line num="192" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="193" count="1" type="stmt"/>
         <line num="195" count="0" type="stmt"/>
         <line num="198" count="0" type="stmt"/>
       </file>
       <file name="messageController.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\controllers\messageController.js">
-        <metrics statements="20" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="5"/>
-        <line num="5" count="3" type="stmt"/>
+        <metrics statements="18" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="4"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="31" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="3" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="52" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
       </file>
       <file name="userController.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\controllers\userController.js">
         <metrics statements="25" coveredstatements="22" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="4"/>
@@ -163,43 +176,66 @@
         <line num="16" count="4" type="stmt"/>
         <line num="22" count="4" type="stmt"/>
         <line num="23" count="4" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="40" count="3" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
         <line num="41" count="5" type="stmt"/>
-        <line num="42" count="5" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
         <line num="43" count="4" type="stmt"/>
-        <line num="44" count="4" type="stmt"/>
-        <line num="45" count="4" type="cond" truecount="3" falsecount="1"/>
-        <line num="47" count="4" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="61" count="3" type="stmt"/>
-        <line num="62" count="8" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
+        <line num="44" count="4" type="cond" truecount="3" falsecount="1"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="64" count="8" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.helpers">
+      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="photoupload.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\helpers\photoupload.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+      </file>
+      <file name="validation.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\helpers\validation.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.middleware">
-      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="passport.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\middleware\passport.js">
-        <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="14" count="7" type="cond" truecount="1" falsecount="1"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="17" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="17" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.models">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="Post.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\models\Post.js">
+      <file name="article.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\models\article.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="3" type="stmt"/>
         <line num="50" count="3" type="stmt"/>
@@ -209,15 +245,15 @@
         <line num="3" count="3" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
       </file>
-      <file name="user.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\models\user.js">
+      <file name="userModel.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\models\userModel.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="4" count="3" type="stmt"/>
         <line num="24" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.routers">
-      <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="blogRouter.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\routers\blogRouter.js">
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="articleRouter.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\routers\articleRouter.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="6" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
@@ -231,11 +267,11 @@
       </file>
       <file name="index.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\routers\index.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
       </file>
       <file name="messageRouter.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\routers\messageRouter.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -243,51 +279,14 @@
         <line num="6" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
       </file>
       <file name="userRouter.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\routers\userRouter.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.support">
-      <metrics statements="14" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="photoupload.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\support\photoupload.js">
-        <metrics statements="8" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-      </file>
-      <file name="validat.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\support\validat.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.swagger">
-      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-      <file name="index.doc.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\swagger\index.doc.js">
-        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
-        <line num="451" count="3" type="stmt"/>
-        <line num="453" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
       </file>
     </package>
   </project>

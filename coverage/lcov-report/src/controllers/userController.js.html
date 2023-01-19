@@ -128,7 +128,10 @@
 <a name='L63'></a><a href='#L63'>63</a>
 <a name='L64'></a><a href='#L64'>64</a>
 <a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -158,13 +161,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
@@ -188,50 +190,53 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createUserSchema, loginUserSchema } from "./../support/validat";
-import User from '../models/user';
-import jwt from 'jsonwebtoken'
-import bcrypt from 'bcryptjs';
-import passport from "passport";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createUserSchema, loginUserSchema } from "../helpers/validation";
+import User from '../models/userModel';
+import  jwt from 'jsonwebtoken'
+import bcrypt from'bcryptjs';
 &nbsp;
-const createNewUser = async (req, res) =&gt; {
+&nbsp;
+const createNewUser= async(req,res)=&gt;{
     try {
-        const validatresult = await createUserSchema.validateAsync(req.body);
-        const userExist = await User.findOne({ email: validatresult.email })
-        if (userExist)
-            res.status(400).json({ "success": false, message: "user already exist" })
-        else {
-            const salt = await bcrypt.genSalt(10)
-            const hashedPassword = await bcrypt.hash(validatresult.password, salt)
-            const user = new User({
-                username: validatresult.username,
-                email: validatresult.email,
-                password: hashedPassword,
-                role: 'admin'
-            })
-            user.save()
-                .then(user =&gt; res.status(201).json({
-                    "success": true,
-                    "user": {
-                        id: user._id,
-                        username: user.username,
-                        email: user.email,
-                        role: user.role,
-                        token: generateToken(user)
-                    }
-                }
-                ))
-                .catch(<span class="fstat-no" title="function not covered" >er</span>r =&gt; <span class="cstat-no" title="statement not covered" >console.log(err))</span>
-        }
+        const valationResult = await createUserSchema.validateAsync(req.body);
+        const userExist=await User.findOne({email:valationResult.email})
+        if(userExist)
+        res.status(400).json({"success":false,message:"user email already exist"})
+        else{
+            const salt=await bcrypt.genSalt(10)
+            const hashedPassword=await bcrypt.hash(valationResult.password,salt)
+       const user=new User({
+            username:valationResult.username,
+            email:valationResult.email,
+            password:hashedPassword,
+            role:'admin'
+        })
+        user.save()
+        .then(user=&gt;res.status(201).json({"success":true,
+        "user":{
+            id:user._id,
+            username:user.username,
+            email:user.email,
+            role:user.role,
+            token:generateToken(user)
+        }}))
+        .catch(<span class="fstat-no" title="function not covered" >er</span>r=&gt;<span class="cstat-no" title="statement not covered" >console.log(err))</span>
+    }
     } catch (error) {
-<span class="cstat-no" title="statement not covered" >        res.status(400).json({ "success": false, message: error.message + "hey" })</span>
+<span class="cstat-no" title="statement not covered" >        res.status(400).json({"success":false,message:error.message})</span>
     }
 }
+&nbsp;
+&nbsp;
 const LoginUser=async (req,res)=&gt;{
     try {
       const valationResult = await loginUserSchema.validateAsync(req.body);
@@ -253,11 +258,15 @@ const LoginUser=async (req,res)=&gt;{
         res.json({"success":false,message:error}).status(400)
     }
 }
-const generateToken = (id) =&gt; {
-    return jwt.sign({ id }, "my-token-secret", { expiresIn: '30d' })
+&nbsp;
+&nbsp;
+&nbsp;
+const generateToken=(id)=&gt;{
+    return jwt.sign({id},"my-token-secret",{expiresIn:'30d'})
 }
-module.exports = {
-    createNewUser, LoginUser
+&nbsp;
+module.exports={
+    createNewUser,LoginUser
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -265,7 +274,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-01-15T19:22:11.697Z
+                at 2023-01-19T10:33:40.843Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
