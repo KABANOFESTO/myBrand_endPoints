@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674124420989" clover="3.2.0">
-  <project timestamp="1674124420990" name="All files">
+<coverage generated="1674207390973" clover="3.2.0">
+  <project timestamp="1674207390974" name="All files">
     <metrics statements="212" coveredstatements="176" conditionals="40" coveredconditionals="23" methods="54" coveredmethods="34" elements="306" coveredelements="233" complexity="0" loc="212" ncloc="212" packages="8" files="17" classes="17"/>
     <package name="src">
       <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
@@ -192,29 +192,6 @@
         <line num="67" count="3" type="stmt"/>
       </file>
     </package>
-    <package name="src.helpers">
-      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="photoupload.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\helpers\photoupload.js">
-        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-      </file>
-      <file name="validation.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\helpers\validation.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-      </file>
-    </package>
     <package name="src.middleware">
       <metrics statements="12" coveredstatements="10" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="passport.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\middleware\passport.js">
@@ -287,6 +264,29 @@
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.support">
+      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="photoupload.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\support\photoupload.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+      </file>
+      <file name="validation.js" path="C:\Users\JULE\Desktop\myBrandbackend\src\support\validation.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
       </file>
     </package>
   </project>

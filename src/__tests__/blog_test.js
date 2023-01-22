@@ -69,7 +69,7 @@ describe('Testing Blog routes', () => {
         it('should create new blog article.', async () => {
             const r1 = await chai.request(app).post('/api/account/signUp').send((tester))
             const res = await chai.request(app).post('/api/articles/add').field('title', testingData.title).field('content', testingData.content).attach("photo", path.resolve(__dirname, './mock/tee.jpg')).set('Authorization', `Bearer ${r1.body.user.token}`)
-            console.log(r1.body)
+            console.log(res.body)
             expect(res.status).to.be.equal(200);
 
 
