@@ -1,4 +1,4 @@
-import  {messageSchema} from "../support/validation"
+import  {messageSchema} from "../support/validation";
 import Message from "../models/message";
 
 const sendMessage = async (req,res)=>{ 
