@@ -3,8 +3,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// const { MONGO_URL } = process.env;
-
 exports.dbConnect = () => {
   mongoose
     .connect(process.env.NODE_ENV === 'production'
