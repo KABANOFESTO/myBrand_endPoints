@@ -1,11 +1,11 @@
 import express from "express";
 import cors from 'cors'
-import routes from "./routers";
-import {dbConnect} from './config/db.config'
+import routes from "./src/routers";
+import {dbConnect} from './src/config/db.config'
 const app = express();
 import { json } from 'express'
 import fileUploader from 'express-fileupload'
-import docsRouter from './api_documentation/index.doc';
+import docsRouter from './src/api_documentation/index.doc';
 import dotenv from 'dotenv';
 dotenv.config();
 const PORT=process.env.PORT || 5000;
